@@ -1,0 +1,121 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-bg: #001B21;
+  /* dark shades of primary color*/
+  --clr-primary-1: #11B0C8;
+  --clr-primary-2: #42B4CA;
+  --clr-secondary-1: #BFDE42;
+  --clr-black: #1A1A1A;
+  --clr-gray: #313234;
+
+  /* primary/main color */
+
+  /* lighter shades of primary color */
+
+  /* darkest grey - used for headings */
+
+  /* grey used for paragraphs */
+  
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: ;
+
+  --transition: all 0.3s linear;
+  --spacing: ;
+  --radius: 1.6rem;
+  --light-shadow: 
+  --dark-shadow:  
+  --max-width: 
+  --fixed-width: 
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+html {
+  font-size: 62.5%;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: ;
+  background: var(--clr-bg);
+  color: white;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: ;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
