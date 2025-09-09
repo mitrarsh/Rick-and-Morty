@@ -6,7 +6,9 @@ const RootLayout = () => {
   return (
     <main>
       <Header/>
-      <Outlet/>
+      <div className="p-[5rem]">
+        <Outlet/>
+      </div>
     </main>
   )
 }

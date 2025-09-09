@@ -1,8 +1,12 @@
-import React from 'react'
+
+import CharactersList from '../conponents/characters/CharactersList'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <main>
+      <h1>Characters' List</h1>
+      <CharactersList/>
+    </main>
   )
 }
 
