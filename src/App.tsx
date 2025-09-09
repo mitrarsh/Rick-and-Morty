@@ -14,7 +14,7 @@ function App() {
   const router= createBrowserRouter([
     {path:"/", element:<RootLayout/>, errorElement:<ErrorPage/>, children:[
       {index:true , element: <HomePage/>},
-      {path:"/character-details/:d", element: <CharacterDetails/>},
+      {path:"/character-details/:id", element: <CharacterDetails/>},
     ]}
   ])
 

@@ -28,7 +28,7 @@ const CharactersList = () => {
         <div className=' grid grid-cols-4 gap-[2rem] w-full align-middle items-center mt-[2rem] mb-[2rem]'> 
             {data?.results.map((char)=>(
                 <Link to={`/character-details/${char.id}`} key={char.id}>
-                    <CharacterCard name={char.name}/>
+                    <CharacterCard name={char.name} image={char.image}/>
                 </Link>
             ))}
         </div>

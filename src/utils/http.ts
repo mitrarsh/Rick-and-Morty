@@ -7,6 +7,15 @@ export async function fetchCharacters():Promise<{ info: Info; results: Character
     return await res.json();
 }
 
+export async function fetchCharacterById(id:string):Promise<Character>{
+    const res = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+    if (!res.ok) {
+        const error = new Error('An error occured while fetching the character');
+        throw error;
+    }
+    return await res.json();
+}
+
 export type Info = {
   count: number;
   pages: number;
@@ -21,4 +30,6 @@ export type Character = {
   species: string;
   type: string;
   gender: string;
+  origin: { name: string; url: string};
+  image: string;
 };
