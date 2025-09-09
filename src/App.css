@@ -55,7 +55,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: ;
+  font-family: var(--ff-primary);
   background: var(--clr-bg);
   color: white;
   line-height: 1.5;
@@ -72,16 +72,17 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: ;
+  /* text-transform: ; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  margin: 0
 }
 h1 {
   font-size: 3rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -106,9 +107,6 @@ p {
   h4 {
     font-size: 1rem;
   }
-  body {
-    font-size: 1rem;
-  }
   h1,
   h2,
   h3,
@@ -120,25 +118,6 @@ p {
 
 /* UI */
 
-.lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 1rem 0;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #e30d5b;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #e30d5b transparent transparent transparent;
-}
 .error-block {
   background-color: #f0d9e5;
   margin: 1rem 0;
@@ -173,3 +152,4 @@ p {
   margin: 0;
 }
 /* section */
+
