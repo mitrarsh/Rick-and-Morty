@@ -1,8 +1,10 @@
-import React from 'react'
+import CharacterDetailsBox from '../conponents/characters/CharacterDetailsBox'
 
 const CharacterDetails = () => {
   return (
-    <div>CharacterDetails</div>
+    <main>
+      <CharacterDetailsBox/>
+    </main>
   )
 }
 

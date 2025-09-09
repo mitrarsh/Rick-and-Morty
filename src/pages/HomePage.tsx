@@ -3,10 +3,12 @@ import CharactersList from '../conponents/characters/CharactersList'
 
 const HomePage = () => {
   return (
-    <main>
-      <h1>Characters' List</h1>
-      <CharactersList/>
-    </main>
+    <>
+      <h1 className='text-[2rem] align-'>Characters' List</h1>
+      <main className=' flex flex-col gap-[2rem] w-full align-middle items-center mt-[2rem]'>
+        <CharactersList/>
+      </main>
+    </>
   )
 }
 

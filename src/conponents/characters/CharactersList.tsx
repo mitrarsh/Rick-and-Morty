@@ -4,6 +4,8 @@ import LoadingIndicator from './../UI/LoadingIndicator';
 import ErrorBlock from './../UI/ErrorBlock';
 import type { Character } from '../../utils/http';
 import type { Info } from '../../utils/http';
+import CharacterCard from './CharacterCard';
+import { Link } from 'react-router-dom';
 
 const CharactersList = () => {
     
@@ -23,13 +25,13 @@ const CharactersList = () => {
   return (
     <main>
 
-        <ul>
+        <div className=' grid grid-cols-4 gap-[2rem] w-full align-middle items-center mt-[2rem] mb-[2rem]'> 
             {data?.results.map((char)=>(
-                <li key={char.id}>
-                    <h2>{char.name}</h2>
-                </li>
+                <Link to={`/character-details/${char.id}`} key={char.id}>
+                    <CharacterCard name={char.name}/>
+                </Link>
             ))}
-        </ul>
+        </div>
     </main>
   )
 }

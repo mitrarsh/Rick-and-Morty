@@ -1,5 +1,5 @@
 export async function fetchCharacters():Promise<{ info: Info; results: Character[] }>{
-    const res = await fetch("https://rickandmortyapi.com/api/charactger");
+    const res = await fetch("https://rickandmortyapi.com/api/character");
     if (!res.ok) {
         const error = new Error('An error occured while fetching characters');
         throw error;

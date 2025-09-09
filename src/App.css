@@ -122,13 +122,15 @@ p {
 .error-block {
   background-color: #f0d9e5;
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 4px;
+  width: fit-content;
   color: #890b35;
   display: flex;
   gap: 2rem;
   align-items: center;
   text-align: left;
+  justify-self: center;
 }
 
 .error-block-icon {
