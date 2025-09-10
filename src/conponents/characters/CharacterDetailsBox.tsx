@@ -12,12 +12,14 @@ const CharacterDetailsBox = ({ data }: CharacterDetailsBoxProps) => {
         <div className="flex  gap-[2rem]">
           <img className="rounded-[1rem] w-[20rem]" src={data.image} alt="" />
           <div className="details">
-            <h3 className="text-[2rem] mb-[1rem] text-[#42B4CA]">{data.name}</h3>
+            <h3 className="text-[2rem] mb-[1rem] text-[#42B4CA]">
+              {data.name}
+            </h3>
             <p>Status: {data.status}</p>
             <p>species: {data.species}</p>
-            <p>Type: {data.type}</p>
             <p>Gender: {data.gender}</p>
             <p>Origin: {data.origin.name}</p>
+            {data.type ? <p> Type: {data.type}</p> : null}
           </div>
         </div>
       ) : (
